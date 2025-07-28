@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statistik Desa Wonodadi Kulon</title>
+  <link rel="icon" href="assets/wonodadi.png" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Google Fonts (Opsional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- Bootstrap 5 JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+
+ <!-- NAVIGATION NAVIGATION NAVIGATION NAVIGATION-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background: rgba(0, 70, 67, 0.85); backdrop-filter: blur(6px);">
+  <div class="container px-4">
+
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-white fs-4" href="index.html">
+      <img src="assets/wonodadi.png" alt="Logo Desa" width="36" height="36" class="me-2" style="border-radius: 50%; object-fit: cover;">
+      Desa Wonodadi Kulon
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+      aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white mx-2 nav-animate" href="index.html">Beranda</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-2 nav-animate" href="#" id="desaDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil Desa</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="about.html">Pemerintahan</a></li>
+            <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-2 nav-animate" href="#" id="demoDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Demografi</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="geografis.html">Geografis</a></li>
+            <li><a class="dropdown-item" href="demografi.html">Kependudukan</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-2 nav-animate" href="#" id="potensiDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Potensi Desa</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="pertanian.html">Pertanian & Peternakan</a></li>
+            <li><a class="dropdown-item" href="umkm.html">UMKM</a></li>
+          </ul>         
+        </li>
+    
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Header Pemerintahan seperti Halaman Utama -->
+<section class="position-relative text-white text-center" style="margin-top: 0; overflow: hidden;">
+  <!-- Gambar Latar -->
+  <img src="assets/bg.jpg" alt="Kantor Desa" class="w-100" style="height: 300px; object-fit: cover;">
+
+  <!-- Overlay Gradasi Hijau Transparan -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(25, 135, 84, 0.4), rgba(20, 108, 67, 0.4));"></div>
+
+  <!-- Teks di Tengah -->
+  <div class="position-absolute top-50 start-50 translate-middle">
+    <h1 class="fw-bold display-5 mb-2">Kependudukan</h1>
+    <p class="fs-6">Rekapitulasi data warga desa</p>
+  </div>
+</section>
+
+
+
+    <section class="py-5 bg-white">
+    <div class="container">
+    
+
+      <!-- Baris 1: Dusun, Gender, KTP -->
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Jumlah Penduduk per Dusun</h5>
+              <canvas id="dusunChart"></canvas>
+              <table class="table table-sm mt-3">
+                <tr><td>Dusun Krajan</td><td class="text-end">300</td></tr>
+                <tr><td>Dusun Waluhtowo</td><td class="text-end">273</td></tr>
+                <tr><td>Dusun Ketos</td><td class="text-end">343</td></tr>
+                <tr><td>Dusun Cabe</td><td class="text-end">673</td></tr>
+                <tr><td>Dusun Nglurah</td><td class="text-end">872</td></tr>
+                <tr><td>Dusun Tawang</td><td class="text-end">764</td></tr>
+                <tr><td>Dusun Pager</td><td class="text-end">1177</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Data Gender</h5>
+              <canvas id="genderChart"></canvas>
+              <table class="table table-sm mt-3">
+                <tr><td>Laki-Laki</td><td class="text-end">2156</td></tr>
+                <tr><td>Perempuan</td><td class="text-end">2174</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Kepemilikan KTP</h5>
+              <canvas id="ktpChart"></canvas>
+              <table class="table table-sm mt-3">
+                <tr><td>Laki-Laki</td><td class="text-end">1924</td></tr>
+                <tr><td>Perempuan</td><td class="text-end">1820</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris 2: Kepala Keluarga & Pendidikan -->
+      <div class="row g-4 mb-4">
+  <!-- Kartu 1: Kepala Keluarga -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title text-center">Kepala Keluarga</h5>
+        <canvas id="kkChart"></canvas>
+        <table class="table table-sm mt-3">
+          <tr><td>Laki-Laki</td><td class="text-end">1052</td></tr>
+          <tr><td>Perempuan</td><td class="text-end">113</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title text-center">Golongan Umur</h5>
+        <canvas id="umurChart" height="300"></canvas>
+        <table class="table table-sm mt-3">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">Golongan Umur</th>
+      <th scope="col" class="text-end">Jumlah</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>0–12 Bln</td><td class="text-end">41</td></tr>
+    <tr><td>13 Bln–4 Thn</td><td class="text-end">188</td></tr>
+    <tr><td>5–6 Thn</td><td class="text-end">83</td></tr>
+    <tr><td>7–12 Thn</td><td class="text-end">291</td></tr>
+    <tr><td>13–15 Thn</td><td class="text-end">258</td></tr>
+    <tr><td>16–18 Thn</td><td class="text-end">76</td></tr>
+    <tr><td>19–25 Thn</td><td class="text-end">181</td></tr>
+    <tr><td>26–35 Thn</td><td class="text-end">254</td></tr>
+    <tr><td>36–45 Thn</td><td class="text-end">250</td></tr>
+    <tr><td>46–50 Thn</td><td class="text-end">161</td></tr>
+    <tr><td>51–60 Thn</td><td class="text-end">290</td></tr>
+    <tr><td>61 Thn ke atas</td><td class="text-end">310</td></tr>
+  </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Kartu 3: Data Pendidikan -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title text-center">Data Pendidikan</h5>
+        <canvas id="pendidikanChart"></canvas>
+        <table class="table table-sm mt-3">
+          <tr><td>Belum/Tidak Sekolah</td><td class="text-end">829</td></tr>
+          <tr><td>Tidak Tamat SD</td><td class="text-end">260</td></tr>
+          <tr><td>SD</td><td class="text-end">1855</td></tr>
+          <tr><td>SLTP</td><td class="text-end">787</td></tr>
+          <tr><td>SLTA</td><td class="text-end">657</td></tr>
+          <tr><td>Diploma I/II</td><td class="text-end">5</td></tr>
+          <tr><td>Diploma III</td><td class="text-end">10</td></tr>
+          <tr><td>Sarjana (S1)</td><td class="text-end">63</td></tr>
+          <tr><td>Doktor (S3)</td><td class="text-end">1</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+     <section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h4 class="fw-bold text-success">Statistik Profesi Penduduk</h4>
+      <p class="text-muted">Distribusi jumlah penduduk Desa Wonodadi Kulon berdasarkan profesi</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Kolom Kiri -->
+      <div class="col-md-6">
+        <div class="table-responsive shadow-sm rounded-4 border border-light">
+          <table class="table table-striped table-borderless align-middle mb-0">
+            <tbody>
+              <tr><td>Petani/Pekebun</td><td class="text-end fw-semibold">1.467</td></tr>
+              <tr><td>Belum/Tidak Bekerja</td><td class="text-end fw-semibold">743</td></tr>
+              <tr><td>Wiraswasta</td><td class="text-end fw-semibold">741</td></tr>
+              <tr><td>Karyawan Swasta</td><td class="text-end fw-semibold">653</td></tr>
+              <tr><td>Pelajar/Mahasiswa</td><td class="text-end fw-semibold">528</td></tr>
+              <tr><td>Mengurus Rumah Tangga</td><td class="text-end fw-semibold">257</td></tr>
+              <tr><td>Pedagang</td><td class="text-end fw-semibold">14</td></tr>
+              <tr><td>PNS</td><td class="text-end fw-semibold">13</td></tr>
+              <tr><td>Pensiunan</td><td class="text-end fw-semibold">10</td></tr>
+              <tr><td>Karyawan Honorer</td><td class="text-end fw-semibold">8</td></tr>
+              <tr><td>Guru</td><td class="text-end fw-semibold">6</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan -->
+      <div class="col-md-6">
+        <div class="table-responsive shadow-sm rounded-4 border border-light">
+          <table class="table table-striped table-borderless align-middle mb-0">
+            <tbody>
+              <tr><td>Sopir</td><td class="text-end fw-semibold">3</td></tr>
+              <tr><td>Tukang Batu</td><td class="text-end fw-semibold">3</td></tr>
+              <tr><td>Tukang Kayu</td><td class="text-end fw-semibold">2</td></tr>
+              <tr><td>Bidan</td><td class="text-end fw-semibold">2</td></tr>
+              <tr><td>Peternak</td><td class="text-end fw-semibold">2</td></tr>
+              <tr><td>Buruh Lepas</td><td class="text-end fw-semibold">2</td></tr>
+              <tr><td>Mekanik</td><td class="text-end fw-semibold">1</td></tr>
+              <tr><td>Pembantu Rumah Tangga</td><td class="text-end fw-semibold">1</td></tr>
+              <tr><td>Transportasi</td><td class="text-end fw-semibold">1</td></tr>
+              <tr><td>TNI</td><td class="text-end fw-semibold">1</td></tr>
+              <tr><td>Perdagangan</td><td class="text-end fw-semibold">1</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+    </div>
+  </section>
+
+  <script>
+    const genderChart = new Chart(document.getElementById('genderChart'), {
+      type: 'pie',
+      data: {
+        labels: ['Laki-Laki', 'Perempuan'],
+        datasets: [{ data: [2156, 2174], backgroundColor: ['#28a745', '#ffc107'] }]
+      }
+    });
+
+    const ktpChart = new Chart(document.getElementById('ktpChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Laki-Laki', 'Perempuan'],
+        datasets: [{ data: [1924, 1820], backgroundColor: ['#198754', '#ffc107'] }]
+      }
+    });
+
+    const kkChart = new Chart(document.getElementById('kkChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Laki-Laki', 'Perempuan'],
+        datasets: [{
+          label: 'Jumlah KK',
+          data: [1052, 113],
+          backgroundColor: ['#28a745', '#ffc107']
+        }]
+      }
+    });
+
+    const ctxDusun = document.getElementById('dusunChart').getContext('2d');
+  new Chart(ctxDusun, {
+    type: 'bar',
+    data: {
+      labels: ['Krajan', 'Waluhtowo', 'Ketos', 'Cabe', 'Nglurah', 'Tawang', 'Pager'],
+      datasets: [{
+        label: 'Jumlah Penduduk',
+        data: [300, 273, 343, 673, 872, 764, 1177],
+        backgroundColor: '#4CAF50',
+        borderRadius: 6,
+        barThickness: 30,
+        maxBarThickness: 40
+      }]
+      }
+    });
+
+    const umurChart = new Chart(document.getElementById('umurChart'), {
+  type: 'bar',
+  data: {
+    labels: [
+      '0–12 Bln', '13 Bln–4 Thn', '5–6 Thn', '7–12 Thn',
+      '13–15 Thn', '16–18 Thn', '19–25 Thn', '26–35 Thn',
+      '36–45 Thn', '46–50 Thn', '51–60 Thn', '61 Thn ke atas'
+    ],
+    datasets: [{
+      label: 'Jumlah',
+      data: [41, 188, 83, 291, 258, 76, 181, 254, 250, 161, 290, 310],
+      backgroundColor: '#4caf50'
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: context => ` ${context.parsed.x} orang`
+        }
+      }
+    },
+    scales: {
+      x: {
+        beginAtZero: true,
+        ticks: {
+          stepSize: 50
+        },
+        title: {
+          display: true,
+          text: 'Jumlah Penduduk'
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Golongan Umur'
+        }
+      }
+    }
+  }
+});
+
+
+    const pendidikanChart = new Chart(document.getElementById('pendidikanChart'), {
+  type: 'doughnut',
+  data: {
+    labels: [
+      'Belum/Tidak Sekolah',
+      'Tidak Tamat SD',
+      'SD',
+      'SLTP',
+      'SLTA',
+      'Diploma I/II',
+      'Diploma III',
+      'Sarjana (S1)',
+      'Doktor (S3)'
+    ],
+    datasets: [{
+      label: 'Jumlah',
+      data: [829, 260, 1855, 787, 657, 5, 10, 63, 1],
+      backgroundColor: [
+        '#ffc107', '#ff9800', '#ff5722', '#f44336',
+        '#e91e63', '#9c27b0', '#3f51b5', '#03a9f4', '#009688'
+      ]
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom'
+      },
+      tooltip: {
+        callbacks: {
+          label: context => ` ${context.label}: ${context.parsed} orang`
+        }
+      }
+    }
+  }
+});  
+  </script>
+
+  <!-- Footer-->
+       <footer class="pt-5 pb-3 mt-auto" style="background-color: #004643; color: #fff;">
+  <div class="container px-5">
+    <div class="row g-4 justify-content-between">
+      <!-- Info Desa -->
+      <div class="col-md-6">
+         <img src="assets/wonodadi.png" height="70" class="mb-3" alt="Logo Desa Wonodadi Kulon">
+        <h5 class="fw-bold mb-3">Desa Wonodadi Kulon</h5>
+        <p class="small text-white-50 mb-2">Kecamatan Ngadirojo, Kabupaten Pacitan, Jawa Timur, Indonesia.</p>
+        <!-- <p class="small text-white-50 mb-2">Email: <a href="mailto:desawonodadikulon@gmail.com" class="link-light">desawonodadikulon@gmail.com</a></p>
+        <p class="small text-white-50">Instagram: <a href="https://instagram.com" class="link-light" target="_blank">@wonodadikulon</a></p> -->
+      </div>
+
+      <!-- Navigasi Footer -->
+      <div class="col-md-4 text-md-end">
+        <h6 class="fw-semibold mb-3">Navigasi</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html" class="link-light text-decoration-none">Beranda</a></li>
+          <li><a href="about.html" class="link-light text-decoration-none">Profil Desa</a></li>
+          <li><a href="demografi.html" class="link-light text-decoration-none">Kependudukan</a></li>
+          <li><a href="pertanian.html" class="link-light text-decoration-none">Potensi Desa</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-light my-4" />
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      &copy; 2025 KKN-PPM UGM Senadi Wonodadi · Sistem Informasi Desa Wonodadi Kulon
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

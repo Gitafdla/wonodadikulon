@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wonodadi Kulon</title>
+  <link rel="icon" href="assets/wonodadi.png" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Google Fonts (Opsional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- Bootstrap 5 JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+
+ <!-- NAVIGATION NAVIGATION NAVIGATION NAVIGATION-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background: rgba(0, 70, 67, 0.85); backdrop-filter: blur(6px);">
+  <div class="container px-4">
+
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-white fs-4" href="index.html">
+      <img src="assets/wonodadi.png" alt="Logo Desa" width="36" height="36" class="me-2" style="border-radius: 50%; object-fit: cover;">
+      Desa Wonodadi Kulon
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+      aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white mx-2 nav-animate" href="index.html">Beranda</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-2 nav-animate" href="#" id="desaDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil Desa</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="about.html">Pemerintahan</a></li>
+            <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-2 nav-animate" href="#" id="demoDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Demografi</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="geografis.html">Geografis</a></li>
+            <li><a class="dropdown-item" href="demografi.html">Kependudukan</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white mx-2 nav-animate" href="#" id="potensiDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Potensi Desa</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="pertanian.html">Pertanian & Peternakan</a></li>
+            <li><a class="dropdown-item" href="umkm.html">UMKM</a></li>
+          </ul>         
+        </li>
+    
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Header Pemerintahan seperti Halaman Utama -->
+<section class="position-relative text-white text-center" style="margin-top: 0; overflow: hidden;">
+  <!-- Gambar Latar -->
+  <img src="assets/bg.jpg" alt="Kantor Desa" class="w-100" style="height: 300px; object-fit: cover;">
+
+  <!-- Overlay Gradasi Hijau Transparan -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(25, 135, 84, 0.4), rgba(20, 108, 67, 0.4));"></div>
+
+  <!-- Teks di Tengah -->
+  <div class="position-absolute top-50 start-50 translate-middle">
+    <h1 class="fw-bold display-5 mb-2">Sejarah Desa</h1>
+  </div>
+</section>
+
+ <!-- Section Sejarah dan Karakteristik Desa -->
+<section class="py-5" style="background: linear-gradient(to bottom, #e9f7ef, #fefefe);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="bg-white rounded-4 shadow p-5 animate__animated animate__fadeInUp">
+          <h2 class="fw-bold text-center mb-4 text-success">Sejarah & Karakteristik Desa Wonodadi Kulon</h2>
+
+          <p class="text-muted fs-6 mb-3">
+            <strong>Wonodadi Kulon</strong> merupakan salah satu desa di Kecamatan <strong>Ngadirojo</strong>. Karakteristik wilayah desa ini dapat ditinjau dari aspek fisik, meliputi letak geografis, luas wilayah, kondisi topografi, dan lingkungan alamnya.
+          </p>
+
+          <p class="text-muted fs-6 mb-4">
+            Nama <strong>Wonodadi Kulon</strong> berasal dari kata <em>"Wono"</em> (hutan), <em>"Dadi"</em> (jadi), dan <em>"Kulon"</em> (barat), yang bermakna "desa yang menjadi lebih baik di sebelah barat". Filosofi tersebut menggambarkan harapan kemajuan dan keberkahan yang menyertai desa ini.
+          </p>
+
+          <h4 class="fw-semibold text-success mb-3 mt-4 border-bottom pb-2">Asal-Usul Wilayah</h4>
+          <p class="text-muted fs-6">
+            Dahulu, wilayah Wonodadi Kulon merupakan bagian dari <strong>Kademangan Njayan</strong> yang terdiri atas tujuh dusun:
+          </p>
+          <div class="row row-cols-2 row-cols-md-3 g-2 mb-3 ps-3">
+            <div class="col"><li class="text-muted">Dusun Krajan</li></div>
+            <div class="col"><li class="text-muted">Dusun Waluhtowo</li></div>
+            <div class="col"><li class="text-muted">Dusun Ketos</li></div>
+            <div class="col"><li class="text-muted">Dusun Cabe</li></div>
+            <div class="col"><li class="text-muted">Dusun Nglurah</li></div>
+            <div class="col"><li class="text-muted">Dusun Katir</li></div>
+            <div class="col"><li class="text-muted">Dusun Ngobal</li></div>
+          </div>
+
+          <p class="text-muted fs-6">
+            Tokoh awal kepemimpinan berasal dari <strong>Pangeran Sanjoyo Rangin</strong> yang berasal dari Ponorogo. Seiring berjalannya waktu, wilayah Wonodadi Kulon terbentuk menjadi desa mandiri dengan tujuh dusun baru:
+          </p>
+          <div class="row row-cols-2 row-cols-md-3 g-2 mb-4 ps-3">
+            <div class="col"><li class="text-muted">Dusun Krajan</li></div>
+            <div class="col"><li class="text-muted">Dusun Waluhtowo</li></div>
+            <div class="col"><li class="text-muted">Dusun Ketos</li></div>
+            <div class="col"><li class="text-muted">Dusun Cabe</li></div>
+            <div class="col"><li class="text-muted">Dusun Nglurah</li></div>
+            <div class="col"><li class="text-muted">Dusun Tawang</li></div>
+            <div class="col"><li class="text-muted">Dusun Pager</li></div>
+          </div>
+
+          <h4 class="fw-semibold text-success mb-3 mt-4 border-bottom pb-2">Nama Kepala Desa</h4>
+          <p class="text-muted fs-6">Berikut ini adalah daftar kepala desa yang pernah memimpin Desa Wonodadi Kulon dari masa ke masa:</p>
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle text-center shadow-sm mt-3">
+              <thead class="table-success">
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Periode</th>
+                </tr>
+              </thead>
+              <tbody class="text-muted">
+                <tr><td>1</td><td>Bapak Noto Semito</td><td>1935–1955</td></tr>
+                <tr><td>2</td><td>Bapak Karsodipuro</td><td>1955–1958</td></tr>
+                <tr><td>3</td><td>Bapak Kasan Dipuro (Pjs)</td><td>1958–1968</td></tr>
+                <tr><td>4</td><td>Bapak Djamal</td><td>1968–1999</td></tr>
+                <tr><td>5</td><td>Bapak Slamet Widodo</td><td>6 Bulan (Meninggal Dunia)</td></tr>
+                <tr><td>6</td><td>Bapak Paryadi (Pjs)</td><td>2000–2002</td></tr>
+                <tr><td>7</td><td>Bapak Paryadi</td><td>2002–2012</td></tr>
+                <tr><td>8</td><td>Bapak Misto, S.Pd</td><td>2012–2023</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+ <!-- Footer-->
+       <footer class="pt-5 pb-3 mt-auto" style="background-color: #004643; color: #fff;">
+  <div class="container px-5">
+    <div class="row g-4 justify-content-between">
+      <!-- Info Desa -->
+      <div class="col-md-6">
+         <img src="assets/wonodadi.png" height="70" class="mb-3" alt="Logo Desa Wonodadi Kulon">
+        <h5 class="fw-bold mb-3">Desa Wonodadi Kulon</h5>
+        <p class="small text-white-50 mb-2">Kecamatan Ngadirojo, Kabupaten Pacitan, Jawa Timur, Indonesia.</p>
+        <!-- <p class="small text-white-50 mb-2">Email: <a href="mailto:desawonodadikulon@gmail.com" class="link-light">desawonodadikulon@gmail.com</a></p>
+        <p class="small text-white-50">Instagram: <a href="https://instagram.com" class="link-light" target="_blank">@wonodadikulon</a></p> -->
+      </div>
+
+      <!-- Navigasi Footer -->
+      <div class="col-md-4 text-md-end">
+        <h6 class="fw-semibold mb-3">Navigasi</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html" class="link-light text-decoration-none">Beranda</a></li>
+          <li><a href="about.html" class="link-light text-decoration-none">Profil Desa</a></li>
+          <li><a href="demografi.html" class="link-light text-decoration-none">Kependudukan</a></li>
+          <li><a href="pertanian.html" class="link-light text-decoration-none">Potensi Desa</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-light my-4" />
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      &copy; 2025 KKN-PPM UGM Senadi Wonodadi · Sistem Informasi Desa Wonodadi Kulon
+    </div>
+  </div>
+</footer>

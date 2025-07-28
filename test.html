@@ -1,0 +1,96 @@
+<!-- Section Tiga Kartu Berjejer -->
+<div class="row g-4 mb-4">
+  <!-- Kartu 1: Kepala Keluarga -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title text-center">Kepala Keluarga</h5>
+        <canvas id="kkChart"></canvas>
+        <table class="table table-sm mt-3">
+          <tr><td>Laki-Laki</td><td class="text-end">1052</td></tr>
+          <tr><td>Perempuan</td><td class="text-end">113</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kartu 2: Golongan Umur -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title text-center">Golongan Umur</h5>
+        <canvas id="umurChart" height="300"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kartu 3: Data Pendidikan -->
+  <div class="col-md-4">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title text-center">Data Pendidikan</h5>
+        <canvas id="pendidikanChart"></canvas>
+        <table class="table table-sm mt-3">
+          <tr><td>Belum/Tidak Sekolah</td><td class="text-end">829</td></tr>
+          <tr><td>Tidak Tamat SD</td><td class="text-end">260</td></tr>
+          <tr><td>SD</td><td class="text-end">1855</td></tr>
+          <tr><td>SLTP</td><td class="text-end">787</td></tr>
+          <tr><td>SLTA</td><td class="text-end">657</td></tr>
+          <tr><td>Diploma I/II</td><td class="text-end">5</td></tr>
+          <tr><td>Diploma III</td><td class="text-end">10</td></tr>
+          <tr><td>Sarjana (S1)</td><td class="text-end">63</td></tr>
+          <tr><td>Doktor (S3)</td><td class="text-end">1</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script Chart.js untuk Golongan Umur -->
+<script>
+const umurChart = new Chart(document.getElementById('umurChart'), {
+  type: 'bar',
+  data: {
+    labels: [
+      '0–12 Bln', '13 Bln–4 Thn', '5–6 Thn', '7–12 Thn',
+      '13–15 Thn', '16–18 Thn', '19–25 Thn', '26–35 Thn',
+      '36–45 Thn', '46–50 Thn', '51–60 Thn', '61 Thn ke atas'
+    ],
+    datasets: [{
+      label: 'Jumlah',
+      data: [41, 188, 83, 291, 258, 76, 181, 254, 250, 161, 290, 310],
+      backgroundColor: '#4caf50'
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: context => ` ${context.parsed.x} orang`
+        }
+      }
+    },
+    scales: {
+      x: {
+        beginAtZero: true,
+        ticks: {
+          stepSize: 50
+        },
+        title: {
+          display: true,
+          text: 'Jumlah Penduduk'
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Golongan Umur'
+        }
+      }
+    }
+  }
+});
+</script>
