@@ -1,96 +1,234 @@
-<!-- Section Tiga Kartu Berjejer -->
-<div class="row g-4 mb-4">
-  <!-- Kartu 1: Kepala Keluarga -->
-  <div class="col-md-4">
-    <div class="card shadow-sm h-100">
-      <div class="card-body">
-        <h5 class="card-title text-center">Kepala Keluarga</h5>
-        <canvas id="kkChart"></canvas>
-        <table class="table table-sm mt-3">
-          <tr><td>Laki-Laki</td><td class="text-end">1052</td></tr>
-          <tr><td>Perempuan</td><td class="text-end">113</td></tr>
-        </table>
-      </div>
+<div class="col-lg-4 mb-5">
+  <div class="card h-100 shadow border-0">
+    <img src="assets/aren.jpeg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Foto UMKM">
+    <div class="card-body p-4">
+      <div class="badge bg-primary bg-gradient rounded-pill mb-2">Kuliner</div>
+      <a class="text-decoration-none link-dark stretched-link" href="#!">
+        <h5 class="card-title mb-3">Gula Aren</h5>
+      </a>
+      <p class="card-text mb-0">Menyediakan gula aren semut dan gula aren dadu jahe hasi produksi rumahan</p>
     </div>
-  </div>
-
-  <!-- Kartu 2: Golongan Umur -->
-  <div class="col-md-4">
-    <div class="card shadow-sm h-100">
-      <div class="card-body">
-        <h5 class="card-title text-center">Golongan Umur</h5>
-        <canvas id="umurChart" height="300"></canvas>
-      </div>
-    </div>
-  </div>
-
-  <!-- Kartu 3: Data Pendidikan -->
-  <div class="col-md-4">
-    <div class="card shadow-sm h-100">
-      <div class="card-body">
-        <h5 class="card-title text-center">Data Pendidikan</h5>
-        <canvas id="pendidikanChart"></canvas>
-        <table class="table table-sm mt-3">
-          <tr><td>Belum/Tidak Sekolah</td><td class="text-end">829</td></tr>
-          <tr><td>Tidak Tamat SD</td><td class="text-end">260</td></tr>
-          <tr><td>SD</td><td class="text-end">1855</td></tr>
-          <tr><td>SLTP</td><td class="text-end">787</td></tr>
-          <tr><td>SLTA</td><td class="text-end">657</td></tr>
-          <tr><td>Diploma I/II</td><td class="text-end">5</td></tr>
-          <tr><td>Diploma III</td><td class="text-end">10</td></tr>
-          <tr><td>Sarjana (S1)</td><td class="text-end">63</td></tr>
-          <tr><td>Doktor (S3)</td><td class="text-end">1</td></tr>
-        </table>
+    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+      <div class="d-flex align-items-end justify-content-between">
+        <div class="d-flex align-items-center">
+          <i class="bi bi-geo-alt-fill fs-4 text-success me-2"></i>
+          <div class="small">
+            <div class="fw-bold">Dusun Krajan</div>
+            <div class="text-muted">082230634628</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Script Chart.js untuk Golongan Umur -->
-<script>
-const umurChart = new Chart(document.getElementById('umurChart'), {
-  type: 'bar',
-  data: {
-    labels: [
-      '0–12 Bln', '13 Bln–4 Thn', '5–6 Thn', '7–12 Thn',
-      '13–15 Thn', '16–18 Thn', '19–25 Thn', '26–35 Thn',
-      '36–45 Thn', '46–50 Thn', '51–60 Thn', '61 Thn ke atas'
-    ],
-    datasets: [{
-      label: 'Jumlah',
-      data: [41, 188, 83, 291, 258, 76, 181, 254, 250, 161, 290, 310],
-      backgroundColor: '#4caf50'
-    }]
-  },
-  options: {
-    indexAxis: 'y',
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: context => ` ${context.parsed.x} orang`
-        }
-      }
-    },
-    scales: {
-      x: {
-        beginAtZero: true,
-        ticks: {
-          stepSize: 50
-        },
-        title: {
-          display: true,
-          text: 'Jumlah Penduduk'
-        }
-      },
-      y: {
-        title: {
-          display: true,
-          text: 'Golongan Umur'
-        }
-      }
-    }
-  }
-});
-</script>
+<!-- Bagong -->
+<div class="col-lg-4 mb-5">
+  <div class="card h-100 shadow border-0 rounded-4 overflow-hidden">
+    <!-- Gambar -->
+    <img src="assets/bagong.jpg" class="card-img-top" alt="Foto UMKM"
+      style="height: 200px; object-fit: cover;">
+
+    <!-- Konten -->
+    <div class="card-body p-4">
+      <span class="badge bg-primary bg-gradient rounded-pill mb-2">Kuliner</span>
+      <h5 class="card-title fw-bold mb-3">Bagong Bakery</h5>
+      <p class="card-text text-muted mb-0">
+        Tersedia berbagai kue dan roti rumahan, mulai dari lidah kucing, kue kacang, hingga roti kelapa yang menjadi favorit pelanggan.
+        Cocok untuk oleh-oleh dan camilan keluarga.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer bg-white px-4 pb-4 pt-0 border-0">
+      <div class="d-flex align-items-start text-success mb-2">
+        <i class="bi bi-geo-alt-fill fs-5 me-2"></i>
+        <div class="small">
+          <div class="fw-semibold">Dusun Tawang</div>
+        </div>
+      </div>
+
+      <!-- Tombol WhatsApp -->
+      <a href="https://wa.me/62859176860749" target="_blank"
+        class="btn btn-success w-100 rounded-3 fw-semibold shadow-sm">
+        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Mayasri -->
+ <div class="col-lg-4 mb-5">
+  <div class="card h-100 shadow border-0 rounded-4 overflow-hidden">
+    <!-- Gambar -->
+    <img src="assets/mayasari.jpg" class="card-img-top" alt="Foto UMKM"
+      style="height: 200px; object-fit: cover;">
+
+    <!-- Konten -->
+    <div class="card-body p-4">
+      <span class="badge bg-primary bg-gradient rounded-pill mb-2">Kuliner</span>
+      <h5 class="card-title fw-bold mb-3">Kripik Mayasari</h5>
+      <p class="card-text text-muted mb-0">
+        Menjual aneka macam keripik hasil industri rumahan dengan bahan baku dari perkebunan warga lokal.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer bg-white px-4 pb-4 pt-0 border-0">
+      <div class="d-flex align-items-start text-success mb-2">
+        <i class="bi bi-geo-alt-fill fs-5 me-2"></i>
+        <div class="small">
+          <div class="fw-semibold">Dusun Ketos</div>
+        </div>
+      </div>
+
+      <!-- Tombol WhatsApp -->
+      <a href="https://wa.me/6283807305763" target="_blank"
+        class="btn btn-success w-100 rounded-3 fw-semibold shadow-sm">
+        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Warung Bambu -->
+ <div class="col-lg-4 mb-5">
+  <div class="card h-100 shadow border-0 rounded-4 overflow-hidden">
+    <!-- Gambar -->
+    <img src="assets/lampir.png" class="card-img-top" alt="Foto UMKM"
+      style="height: 200px; object-fit: cover;">
+
+    <!-- Konten -->
+    <div class="card-body p-4">
+      <span class="badge bg-primary bg-gradient rounded-pill mb-2">Kuliner</span>
+      <h5 class="card-title fw-bold mb-3">Warung Bambu Mak Lampir</h5>
+      <p class="card-text text-muted mb-0">
+        Menyediakan aneka makanan seperti bakso, nasi goreng, tempura, serta berbagai minuman, 
+        dengan suasana asri dan pemandangan pegunungan Pacitan.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer bg-white px-4 pb-4 pt-0 border-0">
+      <div class="d-flex align-items-start text-success mb-2">
+        <i class="bi bi-geo-alt-fill fs-5 me-2"></i>
+        <div class="small">
+          <div class="fw-semibold">Dusun Krajan</div>
+        </div>
+      </div>
+
+      <!-- Tombol WhatsApp -->
+      <a href="https://wa.me/628523502784" target="_blank"
+        class="btn btn-success w-100 rounded-3 fw-semibold shadow-sm">
+        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Gula Aren -->
+ <div class="col-lg-4 mb-5">
+  <div class="card h-100 shadow border-0 rounded-4 overflow-hidden">
+    <!-- Gambar -->
+    <img src="assets/aren.jpeg" class="card-img-top" alt="Foto UMKM"
+      style="height: 200px; object-fit: cover;">
+
+    <!-- Konten -->
+    <div class="card-body p-4">
+      <span class="badge bg-primary bg-gradient rounded-pill mb-2">Kuliner</span>
+      <h5 class="card-title fw-bold mb-3">Gula Aren</h5>
+      <p class="card-text text-muted mb-0">
+        Menyediakan gula aren semut dan gula aren dadu jahe hasi produksi rumahan
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer bg-white px-4 pb-4 pt-0 border-0">
+      <div class="d-flex align-items-start text-success mb-2">
+        <i class="bi bi-geo-alt-fill fs-5 me-2"></i>
+        <div class="small">
+          <div class="fw-semibold">Dusun Krajan</div>
+        </div>
+      </div>
+
+      <!-- Tombol WhatsApp -->
+      <a href="https://wa.me/6282230634628" target="_blank"
+        class="btn btn-success w-100 rounded-3 fw-semibold shadow-sm">
+        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Revita Bakery -->
+ <div class="col-lg-4 mb-5">
+  <div class="card h-100 shadow border-0 rounded-4 overflow-hidden">
+    <!-- Gambar -->
+    <img src="assets/revita.jpeg" class="card-img-top" alt="Foto UMKM"
+      style="height: 200px; object-fit: cover;">
+
+    <!-- Konten -->
+    <div class="card-body p-4">
+      <span class="badge bg-primary bg-gradient rounded-pill mb-2">Kuliner</span>
+      <h5 class="card-title fw-bold mb-3">Revita Bakery</h5>
+      <p class="card-text text-muted mb-0">
+        Menyediakan aneka roti kering rumahan
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer bg-white px-4 pb-4 pt-0 border-0">
+      <div class="d-flex align-items-start text-success mb-2">
+        <i class="bi bi-geo-alt-fill fs-5 me-2"></i>
+        <div class="small">
+          <div class="fw-semibold">Dusun Tawang</div>
+        </div>
+      </div>
+
+      <!-- Tombol WhatsApp -->
+      <a href="https://wa.me/6287759219005" target="_blank"
+        class="btn btn-success w-100 rounded-3 fw-semibold shadow-sm">
+        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!--Bakso Thole-->
+ <div class="col-lg-4 mb-5">
+  <div class="card h-100 shadow border-0 rounded-4 overflow-hidden">
+    <!-- Gambar -->
+    <img src="assets/revita.jpeg" class="card-img-top" alt="Foto UMKM"
+      style="height: 200px; object-fit: cover;">
+
+    <!-- Konten -->
+    <div class="card-body p-4">
+      <span class="badge bg-primary bg-gradient rounded-pill mb-2">Kuliner</span>
+      <h5 class="card-title fw-bold mb-3">Bakso Thole</h5>
+      <p class="card-text text-muted mb-0">
+        >Menjual bakso dengan harga ekonomis Rp5.000 dan Rp10.000, lengkap dengan aneka pilihan minuman segar
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer bg-white px-4 pb-4 pt-0 border-0">
+      <div class="d-flex align-items-start text-success mb-2">
+        <i class="bi bi-geo-alt-fill fs-5 me-2"></i>
+        <div class="small">
+          <div class="fw-semibold">Dusun Krajan</div>
+        </div>
+      </div>
+
+      <!-- Tombol WhatsApp -->
+      <!-- <a href="https://wa.me/6287759219005" target="_blank"
+        class="btn btn-success w-100 rounded-3 fw-semibold shadow-sm">
+        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+      </a> -->
+    </div>
+  </div>
+</div>
