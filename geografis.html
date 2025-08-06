@@ -166,11 +166,17 @@
       <p class="text-secondary fs-5">Galeri Peta Desa</p>
     </div>
 
+    
+    <!-- PETA -->
+     <section class="py-5">
+  <div class="container">
     <div class="row g-4">
       <!-- Card 1 -->
       <div class="col-md-4">
         <div class="card shadow-sm h-100 border-0 rounded-4">
-          <img src="assets/PL.png" class="card-img-top rounded-top-4" alt="Hillshade Map">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalPL">
+            <img src="assets/PL.png" class="card-img-top rounded-top-4" alt="Hillshade Map">
+          </a>
           <div class="card-body">
             <h5 class="card-title fw-semibold text-dark">Peta Penggunaan Lahan</h5>
             <p class="card-text text-muted">
@@ -183,7 +189,9 @@
       <!-- Card 2 -->
       <div class="col-md-4">
         <div class="card shadow-sm h-100 border-0 rounded-4">
-          <img src="assets/longsor.jpg" class="card-img-top rounded-top-4" alt="Topographic Map">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalLongsor">
+            <img src="assets/longsor.jpg" class="card-img-top rounded-top-4" alt="Topographic Map">
+          </a>
           <div class="card-body">
             <h5 class="card-title fw-semibold text-dark">Peta Kerawanan Bencana Longsor</h5>
             <p class="card-text text-muted">
@@ -193,31 +201,31 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
+      <!-- Card 3 -->
       <div class="col-md-4">
         <div class="card shadow-sm h-100 border-0 rounded-4">
-          <img src="assets/potensi.png" class="card-img-top rounded-top-4" alt="Topographic Map">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalPotensi">
+            <img src="assets/potensi.png" class="card-img-top rounded-top-4" alt="Potensi Map">
+          </a>
           <div class="card-body">
             <h5 class="card-title fw-semibold text-dark">Peta Potensi Desa</h5>
             <p class="card-text text-muted">
-              Peta ini menyajikan lokasi dan sebaran potensi unggulan yang dimiliki Desa Wonodadi Kulon, seperti potensi pertanian, peternakan, hingga UMKM lokal. 
+              Peta ini menyajikan lokasi dan sebaran potensi unggulan yang dimiliki Desa Wonodadi Kulon, seperti potensi pertanian, peternakan, hingga UMKM lokal.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Card 3 -->
+      <!-- Card 4 -->
       <div class="col-md-4">
         <div class="card shadow-sm h-100 border-0 rounded-4">
-          <img src="assets/evakuasi.png" class="card-img-top rounded-top-4" alt="Land Use Map">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalEvakuasi">
+            <img src="assets/evakuasi.png" class="card-img-top rounded-top-4" alt="Evakuasi Map">
+          </a>
           <div class="card-body">
             <h5 class="card-title fw-semibold text-dark">Peta Rancangan Titik Evakuasi</h5>
             <p class="card-text text-muted">
-              Titik kumpul evakuasi pada peta ini dirancang dan disebar di 
-berbagai dusun, berada di tengah permukiman warga.
-Peta ini merupakan rancangan awal yang dapat dijadikan acuan untuk 
-penetapan titik kumpul saat darurat, serta sebagai dasar kebijakan
-lanjutan seperti pemasangan palang atau papan informasi di lapangan.
+              Titik kumpul evakuasi pada peta ini dirancang dan disebar di berbagai dusun, berada di tengah permukiman warga. Peta ini merupakan rancangan awal yang dapat dijadikan acuan untuk penetapan titik kumpul saat darurat, serta sebagai dasar kebijakan lanjutan seperti pemasangan palang atau papan informasi di lapangan.
             </p>
           </div>
         </div>
@@ -226,40 +234,82 @@ lanjutan seperti pemasangan palang atau papan informasi di lapangan.
   </div>
 </section>
 
-
-    <!-- PETA -->
-<!-- <div class="col-lg-6">
-        <div class="bg-white shadow-lg rounded-4 p-4 h-100 animate__animated animate__fadeInRight">
-          <h4 class="fw-bold text-success mb-3 text-center text-lg-start">
-            <i class="bi bi-geo-alt-fill me-2"></i>Lokasi Desa
-          </h4>
-          <p class="text-muted fs-6 mb-3">
-            Terletak di timur laut Pacitan, <strong>Desa Wonodadi Kulon</strong> mencakup beberapa dusun seperti Krajan, Waluhtowo, Ketos, Cabe, Nglurah, Tawang, dan Pager.
-          </p>
-          <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm border border-light">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0059999999994!2d110.688888!3d-7.517777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f50.1!3m3!1m2!1s0x2e7a14c6c8888ddd%3A0x888888888888888!2sWonodadi%20Kulon!5e0!3m2!1sen!2sid!4v1650000000000!5m2!1sen!2sid"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-        </div>
-      </div> -->
-
+<!-- Modal 1 -->
+<div class="modal fade" id="modalPL" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="assets/PL.png" class="img-fluid rounded" alt="Peta Penggunaan Lahan">
+      </div>
+    </div>
   </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modalLongsor" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="assets/longsor.jpg" class="img-fluid rounded" alt="Peta Longsor">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modalPotensi" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="assets/potensi.png" class="img-fluid rounded" alt="Peta Potensi">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modalEvakuasi" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0">
+        <img src="assets/evakuasi.png" class="img-fluid rounded" alt="Peta Evakuasi">
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
 </section>
 
+
+
  <!-- Footer-->
-       <footer class="pt-5 pb-3 mt-auto" style="background-color: #004643; color: #fff;">
+<footer class="pt-5 pb-3 mt-auto" style="background-color: #004643; color: #fff;">
   <div class="container px-5">
     <div class="row g-4 justify-content-between">
+
       <!-- Info Desa -->
-      <div class="col-md-6">
-         <img src="assets/wonodadi.png" height="70" class="mb-3" alt="Logo Desa Wonodadi Kulon">
-        <h5 class="fw-bold mb-3">Desa Wonodadi Kulon</h5>
-        <p class="small text-white-50 mb-2">Kecamatan Ngadirojo, Kabupaten Pacitan, Jawa Timur, Indonesia.</p>
-        <!-- <p class="small text-white-50 mb-2">Email: <a href="mailto:desawonodadikulon@gmail.com" class="link-light">desawonodadikulon@gmail.com</a></p>
-        <p class="small text-white-50">Instagram: <a href="https://instagram.com" class="link-light" target="_blank">@wonodadikulon</a></p> -->
+      <div class="col-md-6 d-flex">
+        <img src="assets/wonodadi.png" height="70" class="me-3 mt-1" alt="Logo Desa Wonodadi Kulon">
+        <div>
+          <h5 class="fw-bold mb-2">Desa Wonodadi Kulon</h5>
+          <p class="small text-white-50 mb-2">
+            Kecamatan Ngadirojo, Kabupaten Pacitan, Jawa Timur, Indonesia.
+          </p>
+          <p class="small text-white-50 mb-1">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="mailto:wonodadikulonpemdes@gmail.com" class="link-light text-decoration-none">
+              wonodadikulonpemdes@gmail.com
+            </a>
+          </p>
+          <p class="small text-white-50 mb-0">
+            <i class="bi bi-instagram me-1"></i>
+            <a href="https://www.instagram.com/pemdes.wonodadikulon/" class="link-light text-decoration-none" target="_blank">
+              @pemdes.wonodadikulon
+            </a>
+          </p>
+        </div>
       </div>
 
       <!-- Navigasi Footer -->
@@ -282,4 +332,3 @@ lanjutan seperti pemasangan palang atau papan informasi di lapangan.
     </div>
   </div>
 </footer>
-

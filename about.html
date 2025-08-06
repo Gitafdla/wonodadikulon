@@ -158,81 +158,347 @@
     <div class="mx-auto mb-4" style="width: 80px; height: 4px; background-color: #fcd34d; border-radius: 2px;"></div>
     <p class="text-muted mb-5">Pemerintah Desa Wonodadi Kulon</p>
 
-    <!-- Kepala Desa -->
-    <div class="bg-success text-white px-4 py-2 rounded-3 fw-semibold shadow-sm d-inline-block mb-4">
-      Pj. Kepala Desa
+   <!-- Kepala Desa -->
+<div role="button" data-bs-toggle="modal" data-bs-target="#kepalaDesaModal">
+  <div class="bg-success text-white px-4 py-2 rounded-3 fw-semibold shadow-sm d-inline-block mb-4">
+    Pj. Kepala Desa
+  </div>
+</div>
+
+<!-- Modal Kepala Desa -->
+<div class="modal fade" id="kepalaDesaModal" tabindex="-1" aria-labelledby="kepalaDesaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/ketua.png" alt="Pj. Kepala Desa" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Hemy Triasmoro</h6>
+        <small class="text-muted">Pj. Kepala Desa</small>
+      </div>
     </div>
+  </div>
+</div>
+
 
     <!-- Sekretaris dan Kasi -->
-    <div class="row justify-content-center g-3">
-      <div class="col-md-3">
-        <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium">Sekretaris Desa</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium">Kasi Pemerintahan</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium">Kasi Kesejahteraan</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium">Kasi Pelayanan</div>
+<div class="row justify-content-center g-3">
+
+  <!-- Sekretaris Desa -->
+  <div class="col-md-3">
+    <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium text-center"
+         role="button" data-bs-toggle="modal" data-bs-target="#sekretarisModal">
+      Sekretaris Desa
+    </div>
+  </div>
+
+  <!-- Kasi Pemerintahan -->
+  <div class="col-md-2">
+    <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium text-center"
+         role="button" data-bs-toggle="modal" data-bs-target="#pemerintahanModal">
+      Kasi Pemerintahan
+    </div>
+  </div>
+
+  <!-- Kasi Kesejahteraan -->
+  <div class="col-md-2">
+    <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium text-center"
+         role="button" data-bs-toggle="modal" data-bs-target="#kesejahteraanModal">
+      Kasi Kesejahteraan
+    </div>
+  </div>
+
+  <!-- Kasi Pelayanan -->
+  <div class="col-md-2">
+    <div class="bg-white border-top border-4 border-success rounded-4 p-3 shadow-sm fw-medium text-center"
+         role="button" data-bs-toggle="modal" data-bs-target="#pelayananModal">
+      Kasi Pelayanan
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sekretaris -->
+<div class="modal fade" id="sekretarisModal" tabindex="-1" aria-labelledby="sekretarisLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/sekre.jpg" alt="Sekretaris Desa" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Sugiyanto</h6>
+        <small class="text-muted">Sekretaris Desa</small>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal Kasi Pemerintahan -->
+<div class="modal fade" id="pemerintahanModal" tabindex="-1" aria-labelledby="pemerintahanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/foto-pemerintahan.jpg" alt="Kasi Pemerintahan" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Kuwato</h6>
+        <small class="text-muted">Kasi Pemerintahan</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Kasi Kesejahteraan -->
+<div class="modal fade" id="kesejahteraanModal" tabindex="-1" aria-labelledby="kesejahteraanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/foto-kesejahteraan.jpg" alt="Kasi Kesejahteraan" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Erwan</h6>
+        <small class="text-muted">Kasi Kesejahteraan</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Kasi Pelayanan -->
+<div class="modal fade" id="pelayananModal" tabindex="-1" aria-labelledby="pelayananLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/foto-pelayanan.jpg" alt="Kasi Pelayanan" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Sidik</h6>
+        <small class="text-muted">Kasi Pelayanan</small>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Kaur -->
-    <div class="row justify-content-center g-3 mt-3">
-      <div class="col-md-3">
-        <div class="bg-white border-top border-4 border-warning rounded-4 p-3 shadow-sm fw-medium">Kaur Keuangan</div>
-      </div>
-      <div class="col-md-3">
-        <div class="bg-white border-top border-4 border-warning rounded-4 p-3 shadow-sm fw-medium">Kaur Perencanaan</div>
-      </div>
-      <div class="col-md-3">
-        <div class="bg-white border-top border-4 border-warning rounded-4 p-3 shadow-sm fw-medium">Kaur TU / Umum</div>
+<div class="row justify-content-center g-3 mt-3">
+  <div class="col-md-3">
+    <div class="bg-white border-top border-4 border-warning rounded-4 p-3 shadow-sm fw-medium text-center"
+         role="button" data-bs-toggle="modal" data-bs-target="#modalKeuangan">
+      Kaur Keuangan
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="bg-white border-top border-4 border-warning rounded-4 p-3 shadow-sm fw-medium text-center"
+         role="button" data-bs-toggle="modal" data-bs-target="#modalPerencanaan">
+      Kaur Perencanaan
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="bg-white border-top border-4 border-warning rounded-4 p-3 shadow-sm fw-medium text-center"
+         role="button" data-bs-toggle="modal" data-bs-target="#modalTU">
+      Kaur TU / Umum
+    </div>
+  </div>
+</div>
+
+<!-- Modal Kaur Keuangan -->
+<div class="modal fade" id="modalKeuangan" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/bendahara.jpeg" alt="Kaur Keuangan" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Ibu Siti Hanifah</h6>
+        <small class="text-muted">Kaur Keuangan</small>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal Kaur Perencanaan -->
+<div class="modal fade" id="modalPerencanaan" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/kaur-perencanaan.jpg" alt="Kaur Perencanaan" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Dwi Setiyadi</h6>
+        <small class="text-muted">Kaur Perencanaan</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Kaur TU / Umum -->
+<div class="modal fade" id="modalTU" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/kaur-tu.jpg" alt="Kaur TU / Umum" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Tumardi</h6>
+        <small class="text-muted">Kaur TU / Umum</small>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Kepala Dusun -->
-    <h5 class="mt-5 mb-3 fw-bold text-success">Kepala Dusun</h5>
-    <div class="row justify-content-center g-3">
-      <div class="col-md-2">
-        <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium">Dusun Krajan</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium">Dusun Waluhtowo</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium">Dusun Ketos</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium">Dusun Cabe</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium">Dusun Nglurah</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium">Dusun Tawang</div>
-      </div>
-      <div class="col-md-2">
-        <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium">Dusun Pager</div>
+    <!-- Kepala Dusun -->
+<h5 class="mt-5 mb-3 fw-bold text-success">Kepala Dusun</h5>
+<div class="row justify-content-center g-3">
+  <!-- Dusun Krajan -->
+  <div class="col-md-2">
+    <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium" role="button" data-bs-toggle="modal" data-bs-target="#modalKrajan">
+      Dusun Krajan
+    </div>
+  </div>
+  <!-- Dusun Waluhtowo -->
+  <div class="col-md-2">
+    <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium" role="button" data-bs-toggle="modal" data-bs-target="#modalWaluhtowo">
+      Dusun Waluhtowo
+    </div>
+  </div>
+  <!-- Dusun Ketos -->
+  <div class="col-md-2">
+    <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium" role="button" data-bs-toggle="modal" data-bs-target="#modalKetos">
+      Dusun Ketos
+    </div>
+  </div>
+  <!-- Dusun Cabe -->
+  <div class="col-md-2">
+    <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium" role="button" data-bs-toggle="modal" data-bs-target="#modalCabe">
+      Dusun Cabe
+    </div>
+  </div>
+  <!-- Dusun Nglurah -->
+  <div class="col-md-2">
+    <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium" role="button" data-bs-toggle="modal" data-bs-target="#modalNglurah">
+      Dusun Nglurah
+    </div>
+  </div>
+  <!-- Dusun Tawang -->
+  <div class="col-md-2">
+    <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium" role="button" data-bs-toggle="modal" data-bs-target="#modalTawang">
+      Dusun Tawang
+    </div>
+  </div>
+  <!-- Dusun Pager -->
+  <div class="col-md-2">
+    <div class="bg-light border rounded-3 p-2 shadow-sm text-success fw-medium" role="button" data-bs-toggle="modal" data-bs-target="#modalPager">
+      Dusun Pager
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dusun Krajan -->
+<div class="modal fade" id="modalKrajan" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/krajan.jpg" alt="Kepala Dusun Krajan" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Cahyo Aji Laksono</h6>
+        <small class="text-muted">Kepala Dusun Krajan</small>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal Dusun Waluhtowo -->
+<div class="modal fade" id="modalWaluhtowo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/waluhtowo.jpg" alt="Kepala Dusun Waluhtowo" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Sugiyono</h6>
+        <small class="text-muted">Kepala Dusun Waluhtowo</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dusun Ketos -->
+<div class="modal fade" id="modalKetos" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/ketos.jpeg" alt="Kepala Dusun Ketos" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Sugiyanto</h6>
+        <small class="text-muted">Kepala Dusun Ketos</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dusun Cabe -->
+<div class="modal fade" id="modalCabe" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/cabe.jpeg" alt="Kepala Dusun Cabe" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Tulus Karyono</h6>
+        <small class="text-muted">Kepala Dusun Cabe</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dusun Nglurah -->
+<div class="modal fade" id="modalNglurah" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/nglurah.jpeg" alt="Kepala Dusun Nglurah" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Iswahyudi</h6>
+        <small class="text-muted">Kepala Dusun Nglurah</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dusun Tawang -->
+<div class="modal fade" id="modalTawang" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/tawang.jpg" alt="Kepala Dusun Tawang" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Tukirno</h6>
+        <small class="text-muted">Kepala Dusun Tawang</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dusun Pager -->
+<div class="modal fade" id="modalPager" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <img src="assets/pager.jpg" alt="Kepala Dusun Pager" class="img-fluid rounded-circle mb-2" style="width: 100px;">
+        <h6 class="fw-bold mb-0">Bapak Sunarto</h6>
+        <small class="text-muted">Kepala Dusun Pager</small>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   </div>
 </section>
 
 
-       <!-- Footer-->
-       <footer class="pt-5 pb-3 mt-auto" style="background-color: #004643; color: #fff;">
+      <!-- Footer-->
+<footer class="pt-5 pb-3 mt-auto" style="background-color: #004643; color: #fff;">
   <div class="container px-5">
     <div class="row g-4 justify-content-between">
+
       <!-- Info Desa -->
-      <div class="col-md-6">
-         <img src="assets/wonodadi.png" height="70" class="mb-3" alt="Logo Desa Wonodadi Kulon">
-        <h5 class="fw-bold mb-3">Desa Wonodadi Kulon</h5>
-        <p class="small text-white-50 mb-2">Kecamatan Ngadirojo, Kabupaten Pacitan, Jawa Timur, Indonesia.</p>
-        <!-- <p class="small text-white-50 mb-2">Email: <a href="mailto:desawonodadikulon@gmail.com" class="link-light">desawonodadikulon@gmail.com</a></p>
-        <p class="small text-white-50">Instagram: <a href="https://instagram.com" class="link-light" target="_blank">@wonodadikulon</a></p> -->
+      <div class="col-md-6 d-flex">
+        <img src="assets/wonodadi.png" height="70" class="me-3 mt-1" alt="Logo Desa Wonodadi Kulon">
+        <div>
+          <h5 class="fw-bold mb-2">Desa Wonodadi Kulon</h5>
+          <p class="small text-white-50 mb-2">
+            Kecamatan Ngadirojo, Kabupaten Pacitan, Jawa Timur, Indonesia.
+          </p>
+          <p class="small text-white-50 mb-1">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="mailto:wonodadikulonpemdes@gmail.com" class="link-light text-decoration-none">
+              wonodadikulonpemdes@gmail.com
+            </a>
+          </p>
+          <p class="small text-white-50 mb-0">
+            <i class="bi bi-instagram me-1"></i>
+            <a href="https://www.instagram.com/pemdes.wonodadikulon/" class="link-light text-decoration-none" target="_blank">
+              @pemdes.wonodadikulon
+            </a>
+          </p>
+        </div>
       </div>
 
       <!-- Navigasi Footer -->
@@ -255,6 +521,7 @@
     </div>
   </div>
 </footer>
+
 
 
         <!-- Bootstrap core JS-->
